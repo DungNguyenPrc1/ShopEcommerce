@@ -1,0 +1,122 @@
+ .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+   
+
+
+
+ }
+ .wrapperHeader {
+    width: 100%;
+   //  position: relative;
+    display: flex;
+    height: 113.5px;
+    background-color: #ffd400;
+    padding: 0px 220px;
+    align-items: center;
+    color: var(--color-white);
+    justify-content: space-between;
+    
+    
+ }
+ .logo-header {
+    & span{
+        color: rgb(255,69,0);
+        font-size: 3rem;
+    }
+ }
+
+ .pages {
+    display: flex;
+    justify-content: space-around;
+    width: 140px;
+    & a:hover{
+        color: orangered;
+    }
+    
+ }
+ .pages h2 {
+    font-size: 1.4rem;
+    position: relative;
+    
+
+ }
+ a {
+    position: relative;
+    &:hover{
+      color: orangered !important;
+
+    }
+    &.active{
+        color: orangered !important;
+        &::after{
+            content: '';
+            height: 2px;
+            background-color: var(--color-white);
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: -3px;}
+    
+       
+    }
+   
+
+    
+
+ }
+
+
+ .right-header {
+    font-size: 1.4rem;
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
+    & a {
+        margin-left: 16px;
+    }
+ }
+ .cart-number{
+  
+     
+      display: flex;
+      align-items: center;
+      color: var(--dark-blue);
+      position: relative;
+      font-size: 16px;
+      top: -12px;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      justify-content: center;
+   
+ }
+
+ .cartOder {
+   width: 400px;
+   display: flex;
+   align-items: center;
+   & .cartOder-image{
+      height: 40px;
+      width: 40px;
+      padding: 8px;
+   }
+   & .cartOder-content{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-left: 8px;
+   }
+ }
+ .cartOder-footer {
+   display: flex;
+   align-items: center;
+   height: 60px;
+   margin-top: 8px;
+   justify-content: space-between;
+ }

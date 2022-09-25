@@ -1,0 +1,33 @@
+// @import "antd/dist/antd.css";
+.wrapper {
+    position: relative;
+    height: 700px;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    
+  
+    
+    background-image: url("../../asset/background.jpeg") ;
+}
+.form-login {
+   
+    padding: 16px 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 400px;
+}
+.login-button {
+    width: 100%;
+}
+.login-button-google {
+    width: 100%;
+    background-color: orangered !important;
+}
+.email {
+    & div:first-child{
+        display: flex;
+        justify-content: space-between;
+    }
+}

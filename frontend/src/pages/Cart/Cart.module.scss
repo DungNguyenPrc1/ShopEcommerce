@@ -1,0 +1,104 @@
+.wrapper {
+    // position: relative;
+    min-height: auto;
+   
+
+    padding: 114.5px 120px 0 120px;
+    font-size: 14px;
+    background-color: #f3f3f3;
+    padding-bottom: 16px;
+
+}
+.main {
+
+
+}
+.freeship {
+    border: solid 1px rgba(224, 168, 0, 0.4);
+    padding: 12px 16px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.handleQty {
+    border: solid 1px rgba(0,0,0,.1);
+    width: 114px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & span:first-child{
+        border-right: solid 1px rgba(0,0,0,.1) ;
+        width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     &:hover{
+        cursor: pointer;
+     }
+    }
+    & span:last-child{
+        border-left: solid 1px rgba(0,0,0,.1) ;
+        width: 32px;
+     height: 32px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     &:hover{
+        cursor: pointer;
+     }
+
+    }
+}
+
+.delete{
+    &:hover{
+        cursor: pointer;
+        color: #ee4d2d;
+    }
+}
+.footer-checkout {
+    position: sticky;
+    bottom: 0;
+    height: 160px;
+    background-color: #fff;
+    display: grid;
+    padding: 0 50px;
+    // grid-template-columns: 1fr 20.3125rem 11.875rem;
+    align-items: center;
+    & .voucher {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 14px;
+        // font-weight: 600;
+        height: 44px;
+        box-shadow: 0 -2px 2px -2px rgba(0,0,0,.1);
+        // padding: 0 50px;
+        // width:869px
+
+    }
+    & .coin {
+        width: 100%;
+        height: 50px;
+        border-top: dashed 1px rgba(0,0,0,.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;font-size: 14px;
+        font-weight: 500;
+
+
+
+    }
+    & .checkout {
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        border-top: dashed 1px rgba(0,0,0,.1);
+        align-items: center;
+
+    }
+}

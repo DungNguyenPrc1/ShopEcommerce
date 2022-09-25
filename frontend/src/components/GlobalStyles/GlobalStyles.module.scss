@@ -1,0 +1,49 @@
+// @import '~antd/dist/antd.min.css';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --font-family: "Poppins",sans-serif;
+    --dark-blue: #0a1930;
+    --light-blue: #1f93ff;
+    --blue: #0066d4;
+    --color-white: #fff;
+    --color-dark: #333;
+    --color-grey: #eee;
+    --box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    --color-purple: #9d0191;
+    --color-orange: #f72;
+    --color-primary: #007bff;
+    --color-success: #28a745;
+    --color-danger: #ff4500 !important;
+}
+body {
+    font-family: var(--font-family);
+    // color: var(--color-white) !important;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-rendering: optimizespeed;
+}
+
+a {
+    text-decoration: none;
+    color: #000 !important ;
+    font-size: 1.4rem;
+}
+html {
+    font-size: 62.5%;
+    // font-size: 14px;
+    background-color: #f3f3f3;
+}
+h2 {
+    font-size: 3rem;
+}
+.wrapper {
+    position:relative;
+    top: 80;
+}
+li {
+    list-style: none;
+}

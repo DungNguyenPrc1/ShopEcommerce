@@ -1,0 +1,49 @@
+.wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    height: 472px !important;
+    width: 226px !important;
+    padding: 10px;
+    margin: 0 5px;
+}
+.items-label {
+    height: 23px;
+    
+}
+.items-img {
+    height: 220px;
+    margin-bottom: 10px;
+
+    & .items-img-main{
+        height: 206px;
+        width: 206px;
+    }
+    & .items-img-mini{
+        height: 45px;
+        width: 45px;
+        z-index: 2;
+        margin-top: -35px;
+
+    }
+
+}
+.desb{
+    margin-top: 8px;
+    inline-size: 206px;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 206px;
+    height: 65px
+}
+.price{
+    &::after{
+        content:"đ";
+        font-size: 14px;
+        position:relative;
+        top: -3px;
+        
+    }
+}
