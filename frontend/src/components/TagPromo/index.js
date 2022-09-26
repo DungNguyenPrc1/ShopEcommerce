@@ -13,7 +13,7 @@ const TagPromo = ({ dataPromo }) => {
               <img
                 alt="1"
                 src={data.image}
-                style={{ height: "70px", width: "65px" }}
+                // style={{ height: "70px", width: "65px" }}
               />
             </div>
 

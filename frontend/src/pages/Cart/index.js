@@ -1,7 +1,7 @@
 import styles from "./Cart.module.scss";
 import classNames from "classnames/bind";
 import { FaShippingFast, FaAws } from "react-icons/fa";
-import { Button, Table } from "antd";
+import { Button, Table, Popconfirm } from "antd";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { GET_TOTAL, selectAllCartItems } from "../../redux/slice/cartSlice";
@@ -12,17 +12,13 @@ import {
   CLEAR_CART_ITEMS,
 } from "../../redux/slice/cartSlice";
 
-// for (let i = 0; i < 46; i++) {
-//   data.push({
-//     key: i,
-//     name: `Edward King ${i}`,
-//     age: 32,
-//     address: `London, Park Lane no. ${i}`,
-//   });
-// }
 const cx = classNames.bind(styles);
 
 const Cart = () => {
+  const confirm = (item) => {
+    dispatch(DELETE_CART_ITEMS(item));
+  };
+
   const dispatch = useDispatch();
   const itemsCart = useSelector(selectAllCartItems);
   const cart = useSelector((state) => state.cart);
@@ -42,7 +38,7 @@ const Cart = () => {
     const totalItem = currentValue.qty * currentValue.price;
     return accumulator + totalItem;
   }, 0);
-  console.log(sumPrice);
+  // console.log(selectedRowKeys);
 
   const columns = [
     {
@@ -121,9 +117,17 @@ const Cart = () => {
         return (
           <div
             className={cx("delete")}
-            onClick={() => dispatch(DELETE_CART_ITEMS(item))}
+            // onClick={() => }
           >
-            <span>Delete</span>
+            <Popconfirm
+              title="Are you sure to delete this one?"
+              onConfirm={() => confirm(item)}
+              // onCancel={cancel}
+              okText="Yes"
+              cancelText="No"
+            >
+              <span>Delete</span>
+            </Popconfirm>
           </div>
         );
       },
@@ -138,7 +142,7 @@ const Cart = () => {
 
     setSelectedRowKeys(selectedRowKeys);
   };
-  console.log(selectedRows);
+  // console.log(selectedRows);
 
   const rowSelection = {
     selectedRowKeys,

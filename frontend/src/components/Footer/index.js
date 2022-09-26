@@ -7,6 +7,6 @@ const date = new Date();
 const year = date.getFullYear();
 
 const Footer = () => {
-  return <div className={cx("wrapper")}>&copy; {year} All Right Reserve</div>;
+  return <div className={cx("wrapper")}>&copy; {year} All Right Reserved</div>;
 };
 export default Footer;

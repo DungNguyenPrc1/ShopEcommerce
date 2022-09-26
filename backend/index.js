@@ -16,4 +16,4 @@ app.get("/productsMac", (req, res) => {
   res.send(a);
 });
 const port = process.env.PORT || 4000;
-app.listen(4000, console.log(`server running on port ${port}`));
+app.listen(port, console.log(`server running on port ${port}`));

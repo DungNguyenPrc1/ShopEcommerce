@@ -40,7 +40,7 @@
 }
 .price{
     &::after{
-        content:"đ";
+        content:"";
         font-size: 14px;
         position:relative;
         top: -3px;
