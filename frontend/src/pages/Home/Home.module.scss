@@ -83,6 +83,7 @@
 
 .tech {
     display: flex;
+    align-items: center;
    
     & .tech-new {
         margin-top: 20px;
@@ -94,11 +95,16 @@
         
     }
   
+    & .ads {
+        margin-top: 20px;
+    }
 }
 .technology-tag {
     display: flex;
     flex-direction: column;
     margin-right: 10px;
-    font-size: 16px
+    font-size: 16px;
+    margin-top: 8px;
+    
 }
 
